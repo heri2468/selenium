@@ -1,0 +1,16 @@
+import time
+from selenium import webdriver
+from selenium.webdriver.common.keys import Keys
+driver = webdriver.Chrome(executable_path =r"C:\Users\ritesh\Desktop\chromedriver")
+driver.get('https://mail.google.com/mail/u/0/#inbox')
+print(driver.title)
+
+driver.get('https://mail.google.com/mail/u/0/#inbox/FMfcgxwHMsSwcjqCPspqBmFPdNCZSsNr')
+print(driver.title)
+time.sleep(5)   
+driver.back()
+time.sleep(5) 
+print(driver.title)
+time.sleep(5) 
+driver.forward()
+print(driver.title)
